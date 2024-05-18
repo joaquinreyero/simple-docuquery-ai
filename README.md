@@ -56,10 +56,3 @@
 - **Parámetros**: `file` (archivo PDF)
 - **Respuesta**: JSON con estadísticas del índice de Pinecone.
 
-## Contribuciones
-
-Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request en el repositorio para discutir cualquier cambio que desees realizar.
-
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para obtener más información.
