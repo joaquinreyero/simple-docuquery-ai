@@ -4,11 +4,8 @@ services:
     env_file: 
       - .env
     environment:
-
-      DATABASE_URI_LOCAL: ${DATABASE_URI_LOCAL}
-
-      DSN_SENTRY: ${DSN_SENTRY}
-
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      PINECONE_API_KEY: ${PINECONE_API_KEY}
     build:
         context: .
         dockerfile: Dockerfile

@@ -4,13 +4,9 @@ WORKDIR /src
 
 COPY requirements.txt .
 
-RUN set -eux \
-    && apk add --no-cache --virtual .build-deps build-base \
-    && python -m pip install --upgrade pip \
-    && pip install -r requirements.txt \
-    && apk del .build-deps \
-    && rm -rf /var/cache/apk/* \
-    && rm -rf requirements.txt
+RUN apt-get update && \
+    apt-get install -y libgl1-mesa-glx libglib2.0-0 && \
+    pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 

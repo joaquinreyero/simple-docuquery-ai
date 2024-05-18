@@ -1,6 +1,10 @@
 fastapi
 uvicorn
-SQLAlchemy
-psycopg2-binary
-sentry-sdk[fastapi]
-pydantic
+langchain
+langchain_community
+langchain-openai
+langchain-pinecone
+unstructured[pdf]
+pinecone-client
+openai
+tiktoken
